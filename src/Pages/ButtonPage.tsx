@@ -8,7 +8,7 @@ export function ButtonPage() {
         <div>
           <Button
             severity="primary"
-            className="flex justify-between items-center"
+            icon
             onClick={() => console.log("Clicked!")}
           >
             <FaExclamation />
@@ -39,7 +39,8 @@ export function ButtonPage() {
 
       <div className="flex gap-1 m-5">
         <div>
-          <Button severity="primary" rounded outline>
+          <Button severity="primary" icon rounded outline>
+            <FaExclamation />
             Primary
           </Button>
         </div>
@@ -65,6 +66,9 @@ export function ButtonPage() {
         </div>
         <div>
           <Button severity="primary">Click Me!</Button>
+        </div>
+        <div>
+          <Button>Standard</Button>
         </div>
       </div>
     </>
