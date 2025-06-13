@@ -1,5 +1,5 @@
 import { useState } from "react";
-import type { AccordionEntity } from "../entities/AccordionEntity";
+import type { AccordionEntity } from "../entities/ComponentsEntities";
 import { GoChevronDown, GoChevronRight } from "react-icons/go";
 
 interface AccordionProps {

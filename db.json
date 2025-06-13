@@ -30,5 +30,31 @@
       "title": "JavaScript",
       "description": "JavaScript (JS) is a versatile scripting language primarily used to add interactivity and dynamic content to websites. It enables websites to respond to user actions, update content without full page reloads, and enhance user experiences. Beyond the web, JavaScript can also be used for server-side development with Node.js and mobile application development. "
     }
+  ],
+  "dropdownData": [
+    {
+      "label": "Red",
+      "value": "red"
+    },
+    {
+      "label": "Green",
+      "value": "green"
+    },
+    {
+      "label": "Blue",
+      "value": "blue"
+    },
+    {
+      "label": "Yellow",
+      "value": "yellow"
+    },
+    {
+      "label": "Pink",
+      "value": "pink"
+    },
+    {
+      "label": "Amber",
+      "value": "amber"
+    }
   ]
 }

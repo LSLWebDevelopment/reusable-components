@@ -1,5 +1,5 @@
 import { createContext, useCallback, useState, type ReactNode } from "react";
-import type { AccordionEntity } from "../entities/AccordionEntity";
+import type { AccordionEntity } from "../entities/ComponentsEntities";
 import { getAccordionDataService } from "../services/getAccordionDataService";
 
 interface AccordionContextEntity {
@@ -24,7 +24,12 @@ export function AccordionProvider({ children }: AccordionProviderProps) {
   }, []);
 
   return (
-    <AccordionContext.Provider value={{ accordionData, fetchAccordionData }}>
+    <AccordionContext.Provider
+      value={{
+        accordionData,
+        fetchAccordionData,
+      }}
+    >
       {children}
     </AccordionContext.Provider>
   );

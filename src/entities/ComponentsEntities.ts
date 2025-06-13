@@ -3,3 +3,8 @@ export interface AccordionEntity {
   accordionTitle: string;
   accordionDescription: string;
 }
+
+export interface DropdownEntity {
+  label: string;
+  value: string;
+}

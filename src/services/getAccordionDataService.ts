@@ -1,5 +1,5 @@
 import axios from "axios";
-import type { AccordionEntity } from "../entities/AccordionEntity";
+import type { AccordionEntity } from "../entities/ComponentsEntities";
 
 interface AccordionDataResponse {
   id: number;
