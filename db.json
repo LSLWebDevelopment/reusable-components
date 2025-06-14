@@ -43,18 +43,6 @@
     {
       "label": "Blue",
       "value": "blue"
-    },
-    {
-      "label": "Yellow",
-      "value": "yellow"
-    },
-    {
-      "label": "Pink",
-      "value": "pink"
-    },
-    {
-      "label": "Amber",
-      "value": "amber"
     }
   ]
 }

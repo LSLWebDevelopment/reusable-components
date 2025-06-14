@@ -21,7 +21,6 @@ export function App() {
       >
         <span className="font-bold">Choose my color above...</span>
       </div>
-      {/* <AccordionPage /> */}
     </div>
   );
 }

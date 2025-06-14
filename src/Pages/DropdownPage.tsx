@@ -2,7 +2,8 @@ import { Dropdown } from "../components/Dropdown";
 
 export function DropdownPage() {
   return (
-    <div>
+    <div className="flex flex-row">
+      <Dropdown />
       <Dropdown />
     </div>
   );
