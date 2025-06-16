@@ -1,8 +1,11 @@
 import { useEffect } from "react";
+import { Route } from "./components/Route";
+import { Sidebar } from "./components/Sidebar";
 import { useAccordionContext } from "./hooks/useAccordionContext";
-import { AccordionPage } from "./Pages/AccordionPage";
-import { DropdownPage } from "./Pages/DropdownPage";
 import { useDropdownContext } from "./hooks/useDropdownContext";
+import { AccordionPage } from "./Pages/AccordionPage";
+import { ButtonPage } from "./Pages/ButtonPage";
+import { DropdownPage } from "./Pages/DropdownPage";
 
 export function App() {
   const { fetchAccordionData } = useAccordionContext();
@@ -14,12 +17,19 @@ export function App() {
   }, []);
 
   return (
-    <div>
-      <DropdownPage />
-      <div
-        className={`flex justify-center text-center items-center w-[10rem] h-[10rem] m-auto border-2 text- bg-${selectedColor}-500 `}
-      >
-        <span className="font-bold">Choose my color above...</span>
+    <div className="container mx-auto grid grid-cols-6 gap-4 mt-4">
+      <Sidebar />
+
+      <div className="col-span-5">
+        <Route path={"/"}>
+          <ButtonPage />
+        </Route>
+        <Route path={"/accordion"}>
+          <AccordionPage />
+        </Route>
+        <Route path={"/dropdown"}>
+          <DropdownPage />
+        </Route>
       </div>
     </div>
   );
